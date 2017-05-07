@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+  * {
+   box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  body {
+    margin: 0px;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    page-break-after: always;
+  }
+  #navigation {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 8675309;
+    cursor: pointer;
+  }
+  #navigation div {
+    display: inline-block;
+    margin: 10px;
+  }
+  #counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+  }
+
+  @media print {
+    .slide {
+      /* not static, just in case slide contents take advantage of positioning */
+      position: relative;
+      display: block !important;
+    }
+    #counter, #navigation {
+      display: none;
+    }
+  }
+li {
+  list-style: none;
+}
