@@ -1,0 +1,22 @@
+* {
+    color: #fff;
+}
+.slide {
+  background: linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%);
+text-shadow: 0 1px 0 #013;
+color: #fff;
+text-align: center;
+}
+
+.slide {
+  position: relative;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: column;
+flex-direction: column;
+justify-content: center;
+padding: 2.4rem;
+word-wrap: break-word;
+page-break-after: always;
+min-height: 100vh;
+}
