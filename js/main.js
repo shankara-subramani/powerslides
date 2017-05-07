@@ -1,3 +1,4 @@
+// all thanks to https://github.com/jennschiffer/
 jQuery(document).ready(function($){
 
   var ID = {
